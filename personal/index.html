@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Diri</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="nama">
+        <p>Ahmad Yusril Prayoga</p>
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#pengalamam">Pengalaman</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="about-section">
+        <div class="content">
+          <div class="content-description">
+            <h1 class="title">About Me</h1>
+            <p>
+              Saya seorang fresh graduate lulusan SMK Dharma Putra di jurusan
+              Teknik Komputer Jaringan dengan nilai akhir 84. Saya merupakan
+              pemuda yang kreatif dan menyukai tantangan. Saya aktif dalam
+              organisasi dan kegitan yang ada disekolah
+            </p>
+          </div>
+          <div class="content-image">
+            <img src="foto-profile.png" alt="profile" />
+          </div>
+        </div>
+      </section>
+      <section class="experience-section">
+        <h1 class="title-underline" id="pengalamam">Pengalaman</h1>
+        <div class="card-pengalaman">
+          <h3>Magang Di TCP INTERNUSA Sebagai Teknisi</h3>
+          <p class="date">Februari 2024 - Mei 2024</p>
+          <ul>
+            <li>
+              Mengarsip data entri di Excel untuk meningkatkan efisiensi
+              penyimpanan data.
+            </li>
+            <li>Membersihkan sistem AC, Chiller, dan AHU.</li>
+            <li>Menginput data meteran Trafo, Chiller, dan PAM.</li>
+            <li>
+              Membantu perawatan fasilitas gedung dengan memastikan semua
+              perangkat berfungsi dengan baik.
+            </li>
+            <li>
+              Menarik kabel telepon untuk mendukung infrastruktur komunikasi.
+            </li>
+            <li>Membantu perbaikan kelistrikan.</li>
+          </ul>
+        </div>
+      </section>
+      <aside>
+        <div class="social-media">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/_ysrl3/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ahmad-yusril-prayoga-245541366/?name=Belajar%20Dasar%20Pemrograman%20Web&organizationId=13345120&issueYear=2026&issueMonth=02&expirationYear=2029&expirationMonth=02&certUrl=https%3A%2F%2Fwww.dicoding.com%2Fcertificates%2F0LZ0YD78NX65&certId=0LZ0YD78NX65"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://wa.me/6281368771115"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:a.yusrilprayoga01@gmail.com"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <script>
+      window.addEventListener("scroll", function () {
+        const experienceSection = document.querySelector(".experience-section");
+        const sectionPos = experienceSection.getBoundingClientRect().top;
+        const screenPos = window.innerHeight / 1.3; // Animasi muncul saat elemen 1/3 layar
+
+        if (sectionPos < screenPos) {
+          experienceSection.classList.add("appear");
+        }
+      });
+    </script>
+  </body>
+</html>
